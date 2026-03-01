@@ -3,15 +3,20 @@
     --text-color: #362f2f;
     --accent-color: #221f1c;
     --font-main: 'LabGrotesque', sans-serif;
+    --main-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
+    --font-shadow: 
 }
-
-
 *{   
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+
+/*/////////////////
+FONTS
+//////////////////*/
 @font-face {
   font-family: 'LabGrotesque';
   src: url('fonts/LabGrotesque-Regular.woff2') format('woff2');
@@ -26,6 +31,11 @@
   font-style: normal;
 }
 
+
+
+/*/////////////////
+BODY
+//////////////////*/
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -35,6 +45,10 @@ body {
 }
 
 
+
+/*/////////////////
+JUMNOTRON
+//////////////////*/
 #jumbotron {
     height: 100vh;
     display: flex;
@@ -67,14 +81,14 @@ h1 {
     letter-spacing: -2px;
     margin-bottom: 20px;
     color: var(--accent-color);
+    text-shadow: -2px 2px 5px rgba(181, 179, 179, 0.544);
 }
 
-#about-me {
-    max-width: 600px;
-    font-size: 1.1rem;
-    opacity: 0.8;
-}
 
+
+/*/////////////////
+PROJECTS CONTAINER
+//////////////////*/
 .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -90,10 +104,14 @@ h1 {
     border: 1px solid #ddd6d656;
     transition: transform 0.3s ease;
     border-radius: 1.5rem;
+    box-shadow: var(--main-shadow);
 }
-.project, img{
+
+.project img{
     width: 100%;
     border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: var(--main-shadow);
 }
 
 .project:hover {
@@ -102,7 +120,44 @@ h1 {
 }
 
 .project h3 {
-    margin: 15px 0;
+    margin-top: 10px;
+    margin-bottom: 7px;
     color: var(--accent-color);
 }
 
+h2{
+    margin-top: 50px;
+    margin-bottom: -60px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.project ul{
+    list-style: none;
+    display: flex;
+    background-color: #b4afa9;
+    padding: 7px 10px 0px 11px;
+    width: fit-content;
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+
+.project ul li{
+    margin-right: 5px;
+}
+
+.project ul li i{
+    font-size: 2rem;
+    width: 95%;
+    line-height: 1.7rem;
+}
+
+
+/*/////////////////
+ABOUT ME
+//////////////////*/
+#about-me {
+    max-width: 600px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
