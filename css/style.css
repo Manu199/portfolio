@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #362f2f;
+    --accent-color: #221f1c;
+    --font-main: 'LabGrotesque', sans-serif;
+}
+
+
+*{   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('fonts/LabGrotesque-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('fonts/LabGrotesque-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    padding: 0 10%;
+}
+
+
+#jumbotron {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+.text-jumbo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-jumbo{
+     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.animoji-img{
+    width: 28vw;
+    height: fit-content;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+#about-me {
+    max-width: 600px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.project {
+    background: rgba(204, 201, 201, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border: 1px solid #ddd6d656;
+    transition: transform 0.3s ease;
+    border-radius: 1.5rem;
+}
+.project, img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    text-indent: 2 2 10px #7e7c7ce0;
+}
+
+.project h3 {
+    margin: 15px 0;
+    color: var(--accent-color);
+}
+
