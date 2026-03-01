@@ -22,4 +22,33 @@ projects.forEach(project => {
   container.appendChild(card);
 });
 
+const aboutMeBtn = document.querySelector(".more-about");
+
+aboutMeBtn.addEventListener("click", () => {
+  window.location.href = "about.html";
+})
+
+function hideScrollbar() {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE and Edge */
+    body {
+      -ms-overflow-style: none;
+    }
+    /* Hide scrollbar for Firefox */
+    html {
+      scrollbar-width: none;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+// Call the function to hide the scrollbar
+hideScrollbar();
+
+
 

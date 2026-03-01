@@ -10,6 +10,7 @@
     z-index: 1000;
     border-bottom: 1px solid #ffffff56;
     display: flex;
+    padding-bottom: 55px;
 }
 
 .nav-links {
@@ -22,7 +23,7 @@
     
 }
 
-.navbar button, .nav-button {
+.navbar button{
     background: none;
     border: none;
     color: var(--text-color);
@@ -32,14 +33,24 @@
     text-decoration: none;
     transition: color 0.3s;
     padding: 8px 12px;
+}
 
+.nav-button{
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 1.15rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px 12px;
 }
 
 .navbar button:hover, .nav-button:hover {
     transform: scale(1.03);
     background-color: rgb(165, 163, 163, 0.2);
-    border-radius: 1.3rem;
-    
+    border-radius: 1.3rem;   
 }
 
 .links-container{
