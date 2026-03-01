@@ -4,7 +4,7 @@
     --accent-color: #221f1c;
     --font-main: 'LabGrotesque', sans-serif;
     --main-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
-    --font-shadow: 
+    --card-background: rgba(204, 201, 201, 0.2); 
 }
 *{   
   margin: 0;
@@ -74,7 +74,6 @@ JUMNOTRON
     margin-right: 80px;
     margin-bottom: 50px;
 }
-
 h1 {
     font-size: clamp(2.5rem, 8vw, 5rem);
     text-transform: uppercase;
@@ -82,6 +81,9 @@ h1 {
     margin-bottom: 20px;
     color: var(--accent-color);
     text-shadow: -2px 2px 5px rgba(181, 179, 179, 0.544);
+}
+.text-jumbo p{
+    font-size: large;
 }
 
 
@@ -98,7 +100,7 @@ PROJECTS CONTAINER
 }
 
 .project {
-    background: rgba(204, 201, 201, 0.2);
+    background: var(--card-background);
     backdrop-filter: blur(8px);
     padding: 20px;
     border: 1px solid #ddd6d656;
@@ -117,6 +119,7 @@ PROJECTS CONTAINER
 .project:hover {
     transform: translateY(-10px);
     text-indent: 2 2 10px #7e7c7ce0;
+    cursor: pointer;
 }
 
 .project h3 {
@@ -156,8 +159,15 @@ h2{
 /*/////////////////
 ABOUT ME
 //////////////////*/
-#about-me {
+#about{
     max-width: 600px;
     font-size: 1.1rem;
     opacity: 0.8;
+    background-color: var(--card-background);
+    padding: 20px;
+    border: 1px solid #ddd6d656;
+    transition: transform 0.3s ease;
+    border-radius: 1.5rem;
+    box-shadow: var(--main-shadow); 
 }
+
