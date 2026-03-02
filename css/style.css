@@ -231,3 +231,53 @@ FOOTER
     margin-right: 3px;
     color: var(--text-color);
 }
+
+
+/*/////////////////
+PHONE'S DISPLAY 
+//////////////////*/
+@media (max-width: 812px){
+
+    /*/////////////////
+    JUMBOTRON
+    //////////////////*/
+    #jumbotron{
+        margin-top: 80px;
+        flex-direction: column-reverse;
+        min-height: calc(var(--vh, 1.3vh) * 100);
+    }
+    .image-jumbo img{
+        margin-top: -110px;
+        display: none;
+    }
+    .text-jumbo{
+        justify-content: flex-start;
+        height: 4000px;
+    }
+    .text-jumbo h1{
+        font-size: 3.4rem;
+    }
+    .text-jumbo p{
+        font-size: 1.2rem;
+    }
+
+    /*/////////////////
+    PROJECTS 
+    //////////////////*/
+    .project-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*/////////////////
+    FOOTER
+    //////////////////*/
+    .contacts{
+        width: 100%;
+    }
+    .social-list{
+        width: 100%;
+    }
+}
