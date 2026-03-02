@@ -16,6 +16,7 @@ projects.forEach(project => {
   card.innerHTML = `
     <img src="${project.image}" alt="${project.name}">
     <h3>${project.name}</h3>
+    <p>${project.description}</p>
     <ul class="tech-list">${techIcons}</ul>
   `;
 
@@ -46,9 +47,5 @@ function hideScrollbar() {
   `;
   document.head.appendChild(style);
 }
-
-// Call the function to hide the scrollbar
 hideScrollbar();
-
-
 
