@@ -40,7 +40,7 @@ header{
     justify-content: flex-end;
     margin-top: 40px;
     width: fit-content;
-    justify-self: flex-end;
+    margin-left: auto;
     background: rgba(165, 163, 163, 0.2);
     height: fit-content;
     border-radius: 12rem;
